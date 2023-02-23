@@ -11,7 +11,7 @@ const Pokemon = () => {
   const { id } = useParams()
 
   const widthBarStyle = (stat) => {
-    const percent = Math.ceil(stat * 100 / 255)
+    const percent = Math.ceil(stat * 100 / 200)
 
     return `${percent}%`
   }
@@ -26,11 +26,10 @@ const Pokemon = () => {
   return (
     <main className='pokemon'>
       <section className='pokemon__img-container'>
-        <section className={`pokemon__header bg-lg-${pokemon?.types[0].type.name}`}>
-          <div className='pokemon__img'>
-            <img src={srcImg(pokemon)} alt="" />
-          </div>
-        </section>
+      <section className={`pokemon__header bg-lg-${pokemon?.types[0].type.name}`}></section>
+        <div className='pokemon__img'>
+          <img src={srcImg(pokemon)} alt="" />
+        </div>
       </section>
 
       <section className='pokemon__data'>
@@ -74,10 +73,10 @@ const Pokemon = () => {
                 <article className='pokemon__stat-container' key={stat.stat.name}>
                   <div className='pokemon__stat-info'>
                     <h4 className='pokemon__stat-name'>{stat.stat.name}</h4>
-                    <p className='pokemon__stat-data'>{stat.base_stat}/255</p>
+                    <p className='pokemon__stat-data'>{stat.base_stat}/200</p>
                   </div>
                   <div className='pokemon__containerbar'>
-                    <div className='pokemon__bar' style={{width: widthBarStyle(stat.base_stat)}}></div>
+                    <div className='pokemon__bar' style={{ width: widthBarStyle(stat.base_stat) }}></div>
                   </div>
                 </article>
               ))

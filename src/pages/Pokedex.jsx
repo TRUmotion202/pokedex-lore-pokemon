@@ -39,7 +39,7 @@ const Pokedex = () => {
     backPage < 1 ? setCurrentPage(lastPag) : setCurrentPage(backPage)
   }
   useEffect(() => {
-    const URL = `https://pokeapi.co/api/v2/${selectType ? `type/${selectType}` : "pokemon/?limit=100"}`
+    const URL = `https://pokeapi.co/api/v2/${selectType ? `type/${selectType}` : "pokemon/?limit=1279"}`
     axios.get(URL)
       .then(res => {
         if (selectType) {

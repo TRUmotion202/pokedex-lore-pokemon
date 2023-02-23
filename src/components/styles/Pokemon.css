@@ -6,23 +6,22 @@
 
 .pokemon__img-container {
     position: relative;
+    
 }
 
 .pokemon__header {
-    background-color: green;
-    width: 100%;
-    height: 100px;
+    height: 120px;
     margin-top: 100px;
 }
 
 .pokemon__img {
     position: absolute;
-    width: 100%;
-    bottom: -100px;
-
-    display: flex;
-    justify-content: center;
-    scale: 0.5;
+    width: 220px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .pokemon__data {
@@ -71,7 +70,7 @@
 .pokemon__info-type {
     display: flex;
     margin: 20px 0;
-    gap: 30px;
+    gap: 10px;
     text-align: center;
 }
 
@@ -79,7 +78,9 @@
 .pokemon__abilitie-info {
     display: flex;
     margin: 20px 0;
-    gap: 30px;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .pokemon__type-data,
@@ -112,12 +113,12 @@
 
 .pokemon__containerbar {
     width: 100%;
-    height: 30px;
+    height: 20px;
     background-color: rgb(235, 235, 235);
 }
 
 .pokemon__bar {
-    height: 30px;
+    height: 20px;
     background: linear-gradient(90deg, #ffdf9e, #ecb04f);
 }
 

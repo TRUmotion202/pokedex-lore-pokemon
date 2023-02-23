@@ -1,0 +1,61 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 75vh;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 10px;
+}
+
+.home__input {
+    padding: 19px 24px;
+    border: none;
+    box-shadow: 0 0 10px rgb(156, 156, 156);
+}
+
+.home__btn {
+    padding: 15px 25px;
+    border: none;
+    background-color: #D93F3F;
+    cursor: pointer;
+    color: white;
+}
+
+
+.header__red {
+    height: 100px;
+    background-color: #D93F3F;
+    position: relative;
+}
+
+.header__black {
+    height: 50px;
+    background-color: #0C0C0C;
+    position: relative;
+}
+
+.header__pokeball {
+    position: absolute;
+    right: 40px;
+    top: -20px;
+    background-color: rgba(255, 255, 255, 1);
+    border: 10px solid #0C0C0C;
+    width: 90px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.header__pokeball::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-color: rgba(33, 33, 33, 1);
+    border: 10px solid #0C0C0C;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

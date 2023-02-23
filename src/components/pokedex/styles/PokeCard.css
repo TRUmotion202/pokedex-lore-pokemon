@@ -1,0 +1,224 @@
+.pokeCard {
+    width: min(320px, 100%);
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.pokeCard__header {
+    height: 250px;
+}
+
+.pokeCard__body {
+    padding: 20px;
+}
+
+.pokeCard__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.pokeCard__name {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 35px;
+    text-transform: capitalize;
+}
+
+.pokeCard__types {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.pokeCard__subtitle-type {
+    text-align: center;
+    color: gray;
+    font-size: 15px;
+}
+
+.pokeCard__stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.pokeCard__stat {
+    text-align: center;
+}
+
+.pokeCard__stat-name {
+    text-transform: uppercase;
+    color: gray;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.pokeCard__stat-value {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.border-normal {
+    border: 10px solid #735259;
+}
+
+.border-fighting {
+    border: 10px solid #96402A;
+}
+
+.border-flying {
+    border: 10px solid #beb14c;
+}
+
+.border-poison {
+    border: 10px solid #5B3184;
+}
+
+.border-ground {
+    border: 10px solid #654008;
+}
+
+.border-rock {
+    border: 10px solid #7E7E7E;
+}
+
+.border-bug {
+    border: 10px solid #E52D2D;
+}
+
+.border-ghost {
+    border: 10px solid #323569;
+}
+
+.border-steel {
+    border: 10px solid #5E736C;
+}
+
+.border-fire {
+    border: 10px solid #F96D6F;
+}
+
+.border-water {
+    border: 10px solid #133258;
+}
+
+.border-grass {
+    border: 10px solid #7EC6C5;
+}
+
+.border-electric {
+    border: 10px solid #0C1395;
+}
+
+.border-psychic {
+    border: 10px solid #E52D2D;
+}
+
+.border-ice {
+    border: 10px solid #6FBEDF;
+}
+
+.border-dragon {
+    border: 10px solid #478A93;
+}
+
+.border-dark {
+    border: 10px solid #030706;
+}
+
+.border-fairy {
+    border: 10px solid #971B45;
+}
+
+.border-unknown {
+    border: 10px solid #696767;
+}
+
+.border-shadow {
+    border: 10px solid #6c31a3;
+}
+
+.bg-lg-normal {
+    background: linear-gradient(180deg, hsl(347, 17%, 39%), hsl(347, 70%, 70%));
+}
+
+.bg-lg-fighting {
+    background: linear-gradient(180deg, hsl(12, 56%, 38%), hsl(12, 70%, 70%));
+}
+
+.bg-lg-flying {
+    background: linear-gradient(180deg, hsl(53, 47%, 53%), hsl(53, 70%, 70%));
+}
+
+.bg-lg-poison {
+    background: linear-gradient(180deg, hsl(270, 46%, 35%), hsl(270, 70%, 70%));
+}
+
+.bg-lg-ground {
+    background: linear-gradient(180deg, hsl(36, 85%, 21%), hsl(36, 70%, 70%));
+}
+
+.bg-lg-rock {
+    background: linear-gradient(180deg, hsl(0, 0%, 49%), hsl(0, 0%, 70%));
+}
+
+.bg-lg-bug {
+    background: linear-gradient(180deg, hsl(0, 78%, 54%), hsl(0, 70%, 70%));
+}
+
+.bg-lg-ghost {
+    background: linear-gradient(180deg, hsl(237, 35%, 30%), hsl(237, 70%, 70%));
+}
+
+.bg-lg-steel {
+    background: linear-gradient(180deg, hsl(160, 10%, 41%), hsl(160, 10%, 70%));
+}
+
+.bg-lg-fire {
+    background: linear-gradient(180deg, hsl(359, 92%, 70%), hsl(24, 70%, 70%));
+}
+
+.bg-lg-water {
+    background: linear-gradient(180deg, hsl(213, 64%, 21%), hsl(213, 70%, 70%));
+}
+
+.bg-lg-grass {
+    background: linear-gradient(180deg, hsl(179, 39%, 64%), hsl(128, 70%, 70%));
+}
+
+.bg-lg-electric {
+    background: linear-gradient(180deg, hsl(237, 85%, 32%), hsl(237, 70%, 70%));
+}
+
+.bg-lg-psychic {
+    background: linear-gradient(180deg, hsl(0, 78%, 54%), hsl(0, 70%, 70%));
+}
+
+.bg-lg-ice {
+    background: linear-gradient(180deg, hsl(198, 64%, 65%), hsl(198, 100%, 90%));
+}
+
+.bg-lg-dragon {
+    background: linear-gradient(180deg, hsl(187, 35%, 43%), hsl(187, 70%, 70%));
+}
+
+.bg-lg-dark {
+    background: linear-gradient(180deg, hsl(165, 40%, 2%), hsl(165, 6%, 26%));
+}
+
+.bg-lg-fairy {
+    background: linear-gradient(180deg, hsl(340, 70%, 35%), hsl(340, 70%, 70%));
+}
+
+.bg-lg-unknown {
+    background: linear-gradient(180deg, hsl(0, 1%, 41%), hsl(0, 0%, 70%));
+}
+
+.bg-lg-shadow {
+    background: linear-gradient(180deg, hsl(271, 54%, 42%), hsl(271, 70%, 70%));
+}
